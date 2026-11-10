@@ -174,3 +174,4 @@ ul { list-style: none; }
   .grain, .rec { animation: none; }
   html { scroll-behavior: auto; }
 }
+.kit__head--gap { margin-top: 24px; }
