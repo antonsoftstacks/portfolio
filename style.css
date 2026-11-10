@@ -175,3 +175,31 @@ ul { list-style: none; }
   html { scroll-behavior: auto; }
 }
 .kit__head--gap { margin-top: 24px; }
+
+/* Project page */
+.project-hero { min-height: 100vh; display: grid; grid-template-columns: 1.1fr 1fr; gap: clamp(32px, 5vw, 72px); align-items: center; padding: 120px var(--pad) 60px; }
+.project-hero__img { width: 100%; border: 1px solid var(--line); filter: saturate(.9) contrast(1.05); }
+.project-hero .hero__title { font-size: clamp(3rem, 7vw, 6.5rem); }
+.project-facts { display: flex; flex-direction: column; gap: 8px; margin-top: 36px; padding-top: 20px; border-top: 1px solid var(--line); color: var(--muted); }
+.project-facts b { color: var(--accent); font-weight: 500; margin-right: 12px; }
+.project-cols { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(32px, 6vw, 96px); }
+.project-cols p:not(.label) { color: var(--muted); margin-bottom: 16px; font-size: 1.05rem; }
+.project-cols p.lead { color: var(--text); font-family: var(--serif); font-size: clamp(1.5rem, 2.6vw, 2.1rem); line-height: 1.2; }
+.section__intro { color: var(--muted); max-width: 640px; margin: -28px 0 48px; font-size: 1.05rem; }
+.gallery { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+.gallery__item { background: var(--bg-2); border: 1px solid var(--line); }
+.gallery__item--wide { grid-column: 1 / -1; }
+.gallery__item img { display: block; width: 100%; height: auto; }
+.pair { display: grid; grid-template-columns: 1fr 1fr; gap: 2px; background: var(--line); }
+.gallery__item figcaption { padding: 18px 22px; color: var(--muted); }
+.gallery__item figcaption .mono { display: block; color: var(--accent); margin-bottom: 6px; }
+.project-next { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 64px; }
+a.card { display: block; }
+.card__media--img { padding: 0; position: relative; overflow: hidden; }
+.card__media--img img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .6s; }
+a.card:hover .card__media--img img { transform: scale(1.03); }
+.card__more { color: var(--text); margin-top: 16px; display: inline-block; border-bottom: 1px solid var(--accent); }
+@media (max-width: 860px) {
+  .project-hero, .project-cols, .gallery { grid-template-columns: 1fr; }
+  .project-hero { min-height: auto; }
+}
