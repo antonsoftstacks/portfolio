@@ -150,6 +150,9 @@ ul { list-style: none; }
 .contact { text-align: left; }
 .contact__title { font-family: var(--serif); font-weight: 400; font-size: clamp(3rem, 9vw, 8rem); line-height: .95; margin-bottom: 40px; }
 .contact__links { display: flex; flex-wrap: wrap; gap: 12px; }
+.contact__email { margin-top: 28px; font-size: 1.1rem; color: var(--muted); }
+.contact__email a { border-bottom: 1px solid var(--line); transition: color .2s, border-color .2s; }
+.contact__email a:hover { color: var(--text); border-color: var(--accent); }
 .socials { display: flex; gap: 28px; margin-top: 40px; color: var(--muted); }
 .socials a:hover { color: var(--text); }
 
